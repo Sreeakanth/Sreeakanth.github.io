@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Speech Enhancement</title>
+    <title>Adversarial Attacks</title>
 	  
 	  
     <!-- Bootstrap -->
@@ -44,6 +44,152 @@
 
 <div class="container">
 	<div class="boxtest_ref">
+	<h2 style="color:black;"><b>Adversarial Attacks on wav2vec2</b></h2>
+
+<br>
+&nbsp;
+<br>
+
+
+<br>
+		
+		<table class="table">
+                  <tbody">
+                    <thead>
+                    <tr>
+                      <th class="align-center">S. No</th>
+		      <th class="align-center">Target Type</th>
+                      <th class="align-center">SNR</th>
+                      <th class="align-middle">Clean Score / Adv Score</th>
+		      <th class="align-middle">Clean</th>
+		      <th class="align-middle">Adv</th>
+
+                    </tr>
+                  </thead>
+		
+		    <tr>		
+		      <td class="align-middle"> 1. </th>
+		      <td class="align-middle"> target </td>
+                      <td class="align-middle"> 47.21 </td>
+ 		      <td class="align-middle" > 0.75 / -0.13  </td>
+                      <td><audio controls><source src="wav2vec2/clean_1.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="wav2vec2/adv_1.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+		    <tr>
+		      <td class="align-middle"> 2. </td>
+                      <td class="align-middle"> target </td>
+                      <td class="align-middle"> 37.11 </td>
+ 		      <td class="align-middle" > 0.78 / -0.29 </td>
+                      <td class="align-center"> <audio controls><source src="wav2vec/clean_2.wav" type="audio/mpeg"></audio></td>
+                      <td class="align-center"> <audio controls><source src="wav2vec/adv_2.wav" type="audio/mpeg"></audio></td>
+		    </tr>
+
+		   
+		
+		    <tr>
+                    
+		      <td class="align-middle"> 3. </th>
+                      <td class="align-middle"> non target </td>
+                      <td class="align-middle"> 51.00 </th>
+ 		      <td class="align-middle"> 0.09 / 0.44 </th>
+                      <td><audio controls><source src="wav2vec/clean_3.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="wav2vec/adv_3.wav" type="audio/mpeg"></audio></td>
+		    </tr>
+		      <tr>
+		
+		      <td class="align-middle"> 4. </th>
+                      <td class="align-middle"> non target </td>
+                      <td class="align-middle"> 39.50 </th>
+ 		      <td class="align-middle"> 0.07 / 0.90 </th>
+                      <td><audio controls><source src="wav2vec/clean_4.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="wav2vec/adv_4.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+	
+                  </tbody>
+                </table>
+	
+		
+</div>
+
+
+
+
+<div class="container">
+	<div class="boxtest_ref">
+	<h2 style="color:black;"><b>Adversarial Attacks on ResNet</b></h2>
+
+<br>
+&nbsp;
+<br>
+
+
+<br>
+		
+		<table class="table">
+                  <tbody">
+                    <thead>
+                    <tr>
+                      <th class="align-center">S. No</th>
+		      <th class="align-center">Target Type</th>
+                      <th class="align-center">SNR</th>
+                      <th class="align-middle">Clean Score / Adv Score</th>
+		      <th class="align-middle">Clean</th>
+		      <th class="align-middle">Adv</th>
+
+                    </tr>
+                  </thead>
+		
+		    <tr>		
+		      <td class="align-middle"> 1. </th>
+		      <td class="align-middle"> target </td>
+                      <td class="align-middle"> 48.53 </td>
+ 		      <td class="align-middle" > 0.75 / 0.05 </td>
+                      <td><audio controls><source src="resnet/clean_1.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="resnet/adv_1.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+		    <tr>
+		      <td class="align-middle"> 2. </td>
+                      <td class="align-middle"> target </td>
+                      <td class="align-middle"> 37.10 </td>
+ 		      <td class="align-middle" > 0.78 / -0.45 </td>
+                      <td class="align-center"> <audio controls><source src="resnet/clean_2.wav" type="audio/mpeg"></audio></td>
+                      <td class="align-center"> <audio controls><source src="resnet/adv_2.wav" type="audio/mpeg"></audio></td>
+		    </tr>
+
+		   
+		
+		    <tr>
+                    
+		      <td class="align-middle"> 3. </th>
+                      <td class="align-middle"> non target </td>
+                      <td class="align-middle"> 51.34 </th>
+ 		      <td class="align-middle"> 0.09 / 0.55 </th>
+                      <td><audio controls><source src="resnet/clean_3.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="resnet/adv_3.wav" type="audio/mpeg"></audio></td>
+		    </tr>
+		      <tr>
+		
+		      <td class="align-middle"> 4. </th>
+                      <td class="align-middle"> non target </td>
+                      <td class="align-middle"> 39.80 </th>
+ 		      <td class="align-middle"> 0.07 / 0.83 </th>
+                      <td><audio controls><source src="resnet/clean_4.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="resnet/adv_4.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+	
+                  </tbody>
+                </table>
+	
+		
+</div>
+
+
+<div class="container">
+	<div class="boxtest_ref">
 	<h2 style="color:black;"><b>Adversarial Attacks on wav2vec</b></h2>
 
 <br>
@@ -59,8 +205,8 @@
                     <tr>
                       <th class="align-center">S. No</th>
 		      <th class="align-center">Target Type</th>
-                      <th class="align-center">Clean Score</th>
-                      <th class="align-middle">Adv Score</th>
+                      <th class="align-center">SNR</th>
+                      <th class="align-middle">Clean Score / Adv Score</th>
 		      <th class="align-middle">Clean</th>
 		      <th class="align-middle">Adv</th>
 
@@ -70,19 +216,19 @@
 		    <tr>		
 		      <td class="align-middle"> 1. </th>
 		      <td class="align-middle"> target </td>
-                      <td class="align-middle"> - </td>
- 		      <td class="align-middle" > -281.0929 </td>
-                      <td><audio controls><source src="wav2vec/clean_0.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="wav2vec/adv_0.wav" type="audio/mpeg"></audio></td>
+                      <td class="align-middle"> 47.27 </td>
+ 		      <td class="align-middle" > 0.75 / -0.15 </td>
+                      <td><audio controls><source src="wav2vec/clean_1.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="wav2vec/adv_1.wav" type="audio/mpeg"></audio></td>
                       
 		    </tr>
 		    <tr>
 		      <td class="align-middle"> 2. </td>
                       <td class="align-middle"> target </td>
-                      <td class="align-middle"> - </td>
- 		      <td class="align-middle" > -206.07358 </td>
-                      <td class="align-center"> <audio controls><source src="wav2vec/clean_1.wav" type="audio/mpeg"></audio></td>
-                      <td class="align-center"> <audio controls><source src="wav2vec/adv_1.wav" type="audio/mpeg"></audio></td>
+                      <td class="align-middle"> 36.62 </td>
+ 		      <td class="align-middle" > 0.78 / -0.76 </td>
+                      <td class="align-center"> <audio controls><source src="wav2vec/clean_2.wav" type="audio/mpeg"></audio></td>
+                      <td class="align-center"> <audio controls><source src="wav2vec/adv_2.wav" type="audio/mpeg"></audio></td>
 		    </tr>
 
 		   
@@ -91,19 +237,19 @@
                     
 		      <td class="align-middle"> 3. </th>
                       <td class="align-middle"> non target </td>
-                      <td class="align-middle"> - </th>
- 		      <td class="align-middle"> 0.6813965 </th>
-                      <td><audio controls><source src="wav2vec/clean_2.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="wav2vec/adv_2.wav" type="audio/mpeg"></audio></td>
+                      <td class="align-middle"> 51.05 </th>
+ 		      <td class="align-middle"> 0.09 / 0.93 </th>
+                      <td><audio controls><source src="wav2vec/clean_3.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="wav2vec/adv_3.wav" type="audio/mpeg"></audio></td>
 		    </tr>
 		      <tr>
 		
 		      <td class="align-middle"> 4. </th>
                       <td class="align-middle"> non target </td>
-                      <td class="align-middle"> - </th>
- 		      <td class="align-middle"> 78.40494 </th>
-                      <td><audio controls><source src="wav2vec/clean_3.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="wav2vec/adv_3.wav" type="audio/mpeg"></audio></td>
+                      <td class="align-middle"> 38.61 </th>
+ 		      <td class="align-middle"> 0.07 / 0.71 </th>
+                      <td><audio controls><source src="wav2vec/clean_4.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="wav2vec/adv_4.wav" type="audio/mpeg"></audio></td>
                       
 		    </tr>
 	
@@ -112,6 +258,81 @@
 	
 		
 </div>
+
+
+
+<div class="container">
+	<div class="boxtest_ref">
+	<h2 style="color:black;"><b>Adversarial Attacks on xvec</b></h2>
+
+<br>
+&nbsp;
+<br>
+
+
+<br>
+		
+		<table class="table">
+                  <tbody">
+                    <thead>
+                    <tr>
+                      <th class="align-center">S. No</th>
+		      <th class="align-center">Target Type</th>
+                      <th class="align-center">SNR</th>
+                      <th class="align-middle">Clean Score / Adv Score</th>
+		      <th class="align-middle">Clean</th>
+		      <th class="align-middle">Adv</th>
+
+                    </tr>
+                  </thead>
+		
+		    <tr>		
+		      <td class="align-middle"> 1. </th>
+		      <td class="align-middle"> target </td>
+                      <td class="align-middle"> 48.54 </td>
+ 		      <td class="align-middle" > 0.57 / -0.94 </td>
+                      <td><audio controls><source src="xvec/clean_1.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="xvec/adv_1.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+		    <tr>
+		      <td class="align-middle"> 2. </td>
+                      <td class="align-middle"> target </td>
+                      <td class="align-middle"> 37.97 </td>
+ 		      <td class="align-middle" > 0.71 / -0.93 </td>
+                      <td class="align-center"> <audio controls><source src="xvec/clean_2.wav" type="audio/mpeg"></audio></td>
+                      <td class="align-center"> <audio controls><source src="xvec/adv_2.wav" type="audio/mpeg"></audio></td>
+		    </tr>
+
+		   
+		
+		    <tr>
+                    
+		      <td class="align-middle"> 3. </th>
+                      <td class="align-middle"> non target </td>
+                      <td class="align-middle"> 51.19 </th>
+ 		      <td class="align-middle"> 0.32 / 0.95 </th>
+                      <td><audio controls><source src="xvec/clean_3.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="xvec/adv_3.wav" type="audio/mpeg"></audio></td>
+		    </tr>
+		      <tr>
+		
+		      <td class="align-middle"> 4. </th>
+                      <td class="align-middle"> non target </td>
+                      <td class="align-middle"> 40.08 </th>
+ 		      <td class="align-middle"> 0.04 / 0.95 </th>
+                      <td><audio controls><source src="xvec/clean_4.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="xvec/adv_4.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+	
+                  </tbody>
+                </table>
+	
+		
+</div>
+
+
 </center>
 	  </body>
 </html>
